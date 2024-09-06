@@ -1,0 +1,102 @@
+.header {
+    background-image: url('src/assets/images/gwhauti.jpeg');
+    background-size: cover;
+    background-position: center;
+    min-width: 100%;
+    height: 730px;
+    color: black;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.header h1 {
+    padding-top: 500px;
+    font-size: 48px;
+    font-weight: bold;
+}
+.header p {
+    font-size: 24px;
+    color: white;
+}
+.section-title {
+    text-align: center;
+    margin: 50px 0;
+}
+.tour-details .part1 {
+    counter-reset: item; /* Initialize the counter */
+    list-style-type: none;
+    padding: 0;
+}
+
+.tour-plan{
+    
+    border-radius: 10px;
+    box-shadow:  20px 20px 60px #bebebe,
+     -20px -20px 60px #ffffff;
+    padding: 20px;
+}
+.tour-details .dotted-list {
+    counter-reset: item; /* Initialize the counter */
+  }
+  
+  .tour-details-points{
+    list-style-type: none
+  }
+  .tour-details .tour-details-points {
+    counter-increment: item; /* Increment the counter */
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 40px; /* Adjusted to make space for the counter */
+  }
+  
+  .tour-details .tour-details-points::before {
+    content: counter(item) ".";
+    background-color: #ff5722; /* Deep orange */
+    color: white;
+    padding: 0px 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Make the counter circular */
+  }
+  
+body {
+font-family: Arial, sans-serif;
+}
+
+.book-tour{
+    justify-content: end;
+}
+
+@media (max-width: 1140px) {
+  .header {
+      height: 400px;
+      padding: 50px 0;
+  }
+
+  .header h1 {
+      padding-top: 200px;
+      font-size: 32px;
+  }
+
+  .header p {
+      font-size: 16px;
+  }
+
+  .package-done {
+      flex-direction: column;
+  }
+
+  .package-done li {
+      margin-bottom: 20px;
+  }
+
+  .rate .card-wrapper {
+      flex-direction: column;
+  }
+}

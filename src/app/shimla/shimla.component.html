@@ -1,0 +1,101 @@
+<!-- Header Section -->
+<header class="header">
+    <div class="container">
+        <h1>Travel Packages</h1>
+        <p>Shimla (02 Nights) Manali (03 Nights)</p>
+    </div>
+</header>
+
+<!-- Information and Tour Plan Tabs -->
+<div class="container mt-4">
+    <ul class="nav nav-tabs justify-content-center"  style=" font-size: 20px;">
+        <li class="nav-item" (click)="showInformation()">
+            <a class="nav-link" data-toggle="tab" href="/shimla-information" [routerLink]="['/shimla-information']">
+                <img src="assets/images/tour2.png" />
+                Information
+            </a>
+        </li>
+        <li class="nav-item" (click)="showTourPlan()">
+            <a class="nav-link active" data-toggle="tab">
+                <img src="assets/images/tour1.png"/>
+                Tour Plan
+            </a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <!-- Information Section -->
+        <div id="tour-plan" class="container tab-pane active tour-plan" *ngIf='selectedSubMenu == "tourInformation"'>
+            <br>
+            <a href="/shimla-information" routerLink="shimla-information"></a>
+        </div>
+        <!-- Tour Plan Section -->
+        <div id="tour-plan" class="container tab-pane active tour-plan" *ngIf='selectedSubMenu == "tourPlan"'>
+            <br>
+            <h3 class="section-title"></h3>
+            <div class="row">
+                <!-- Tour Itinerary -->
+                <div class="col-md-8">
+                    <div class="tour-details">
+                      <ul class="dotted-list">
+                        <li class="tour-details-points"><strong>Day 1:</strong> <strong>Chandigarh To Shimla</strong>
+                          <p>Pick Up From Chandigarh Railway Station/Airport and Drive To Shimla. O/N Hotel</p>
+                          <ul>
+                            <li>5 Star Accommodation</li>
+                          </ul>
+                        </li>
+                        <li class="tour-details-points"><strong>Day 2: Shimla</strong>
+                          <p>After Breakfast Excursion to Kufri. Kufri is famous for its Himalayan National Park, Pony and Yak Ride, and one can see the endless Himalayan Panorama from Kufri. After lunch, sightseeing of various places in and around Shimla, including the mosques built in (1830), Vice regal Lodge built in (1885), Christ Church built in (1844), The Gaiety Theatre- the first beauty contest of the world was supposed to start (1887), The Grindlays Bank (1912)- the world-wide bank started by Robert Melville Grindlay, The Scandal Point, and The famous Shopping Plaza of the North, The Mall. O/N Hotel</p>
+                          <ul>
+                            <li>5 Star Accommodation</li>
+                            <li>Breakfast</li>
+                            <li>5 Star Travel Arrangement</li>
+                            <li>10 Best Spots</li>
+                          </ul>
+                        </li>
+                        <li class="tour-details-points"><strong>Day 3: Shimla To Manali</strong>
+                          <p>After breakfast, check out from the hotel, a distance of 265 km (8 hrs). On the way, visit Sunder Nagar, Pandoh Dam, Hanogi Mata Temple, Kullu Valley. O/N Hotel</p>
+                          <ul>
+                            <li>5 Star Accommodation</li>
+                            <li>Breakfast</li>
+                            <li>5 Star Travel Arrangement</li>
+                            <li>10 Best Spots</li>
+                          </ul>
+                        </li>
+                        <li class="tour-details-points"><strong>Day 4: Manali</strong>
+                          <p>After breakfast, sightseeing of places in and around Manali, like Hadimba temple, Manu temple by walking, Vashisht Bath, Van Vihar, and evening shopping at the local market. O/N Hotel</p>
+                          <ul>
+                            <li>5 Star Accommodation</li>
+                            <li>Breakfast</li>
+                            <li>5 Star Travel Arrangement</li>
+                            <li>10 Best Spots</li>
+                          </ul>
+                        </li>
+                        <li class="tour-details-points"><strong>Day 5: Manali</strong>
+                          <p>After breakfast, excursion to Solang Valley and Atal tunnel till north pole depending on road condition, then back to Hotel O/N Hotel.</p>
+                          <p>Excursion to Rohtang Pass till snow point (Excursion to Rohtang Pass is at guest's own expense & subject to permit). Situated at an altitude of 3979 meters above sea level and 51 kms outside Manali is the mighty Rohtang Pass - the gateway to Lahaul-Spiti valley. It affords a wide panoramic view of the mountains. Here, one sees the majesty of the mountains at its height and splendor. At the top of the pass, the air seems to glitter against the snow as you look down over herringboned ridges into the Lahaul valley. Evening at leisure. O/N Hotel (Closed on Tuesday)</p>
+                          <ul>
+                            <li>5 Star Accommodation</li>
+                            <li>Breakfast</li>
+                            <li>5 Star Travel Arrangement</li>
+                            <li>10 Best Spots</li>
+                          </ul>
+                        </li>
+                        <li class="tour-details-points"><strong>Day 6: Manali To Chandigarh</strong>
+                          <p>After breakfast, check out from the hotel and drive to Chandigarh Airport/railway station.</p>
+                          <ul>
+                            <li>Breakfast</li>
+                            <li>5 Star Travel Arrangement</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-4">
+                    <app-book-tour selectedPlan="shimla"></app-book-tour>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

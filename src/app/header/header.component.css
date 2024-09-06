@@ -1,0 +1,35 @@
+.navbar {
+    background-color: rgba(85, 85, 85, 0.5); /* 0.5 is the opacity level */
+    color: white;
+}
+
+.navbar .nav-link {
+    color: white;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+}
+
+.logo {
+    width: 200px;
+    height: 80px;
+}
+
+@media (max-width: 767.98px) {
+    .navbar {
+        background-color: rgba(85, 85, 85, 0.7); /* Slightly darker for mobile view */
+    }
+
+    .navbar .nav-link {
+        color: white;
+        text-align: center;
+    }
+
+    .navbar-brand {
+        margin: 0 auto;
+    }
+}

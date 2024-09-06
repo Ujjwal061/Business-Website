@@ -1,0 +1,200 @@
+/* General Styles */
+.header{
+    min-height: 100vh;
+    background-image: url('src/assets/images/INDIABUSINESS.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    /* color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15% 0;
+    padding-bottom: 80px;*/
+} 
+
+.header h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.header p {
+    margin-top: 300px;
+    font-size: 70px;
+}
+
+.header .search-bar {
+    margin-top: 0px;
+    max-width: 600px;
+    height: 40px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 10px;
+    border-radius: 30px;
+}
+
+.header .search-bar select {
+    flex: 1;
+    border-color: white;
+    border-radius: 20px;
+}
+
+.header .search-bar .btn-explore {
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.header .search-bar .btn-explore:hover {
+    background-color: #333;
+}
+
+.section-title {
+    text-align: center;
+    justify-content: center;
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+.container1 {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.card {
+    border: none;
+    min-height: 520px;
+    /* box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff; */
+}
+
+.card-1 {
+    border: none;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.middle-part {
+    background-image: url('src/assets/images/home.jpg');
+    height: auto;
+    max-width: 100%;
+    padding-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-title2 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+.contact-form {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.btn-primary {
+    background-color: black;
+    border: none;
+    border-radius: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #333;
+}
+
+.end-part {
+    font-size: 48px;
+}
+
+.list-unstyled {
+    padding-top: 80px;
+}
+
+.btn-primary1 {
+    background-color: black;
+    color: white;
+    border: none;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.btn-primary1:hover {
+    background-color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 1440px) {
+    .container-fluid {
+        height: 400px;
+        background-size: contain; 
+        padding: 10% 0;
+    }
+    .header {
+        height: 400px;
+        padding: 50px 0;
+    }
+
+    .header h1 {
+        padding-top: 200px;
+        font-size: 32px;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    .package-done {
+        flex-direction: column;
+    }
+
+    .package-done li {
+        margin-bottom: 20px;
+    }
+
+    .rate .card-wrapper {
+        flex-direction: column;
+    }
+}
+
+/* Specific Adjustments */
+.card-1 .card-img-top {
+    height: 500px; /* Adjust the height as needed */
+}
+
+.icon-class img {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+}
+
+.card {
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    border-radius: 10px;
+    background-color: #ffffff; /* Optional: to ensure a consistent background color */
+    padding: 20px;
+}
+
+/* Additional styles for smaller screens */
+@media (max-width: 768px) {
+    .card {
+        box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    }
+}

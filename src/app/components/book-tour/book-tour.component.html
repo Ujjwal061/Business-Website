@@ -1,0 +1,44 @@
+<!-- Booking Form -->
+<div [formGroup]="form">
+    <form action="javascript:void(0)" (submit)="send()" id="bookingForm" class="contact-form" method="post">
+        <h3 class="section-title"><strong>Book This Tour</strong></h3>
+        <p style="text-align: center;">Enjoy the cool breeze and snow showers in Shimla. Explore tourist Spots with lush
+            greens,
+            visit architectural gems and grab off-season discounts!</p>
+        <div class="form-group w-100">
+            <label for="name"></label>
+            <input formControlName="from_name" type="text" class="form-control" id="name" placeholder="Name" required>
+        </div>
+        <div class="form-group w-100">
+            <label for="email"></label>
+            <input formControlName="from_email" type="email" class="form-control" id="email" placeholder="Email" required>
+        </div>
+        <!-- <div class="form-group w-100">
+            <label for="confirmEmail"></label>
+            <input type="email" class="form-control" id="confirmEmail" placeholder="Confirm Email" required>
+        </div> -->
+        <div class="form-group w-100">
+            <label for="phone"></label>
+            <input formControlName="from_phone" type="number" class="form-control" id="phone" placeholder="Phone" max="10" required>
+        </div>
+        <div class="form-group w-100">
+            <label for="date"></label>
+            <input formControlName="from_date" type="date" class="form-control" id="date" placeholder="dd-mm-yy" required>
+        </div>
+        <div class="form-group w-100">
+            <label for="tickets"></label>
+            <input formControlName="from_tickets" type="number" class="form-control" id="tickets" placeholder="Number Of Tickets" required>
+        </div>
+        <div class="form-group w-100">
+            <label for="message"></label>
+            <textarea formControlName="from_message" class="form-control" id="message" rows="1" placeholder="Message" required></textarea>
+        </div>
+        <input type="submit" class="btn btn-primary" id="sendMessageButton" value="Send Message" >
+    </form>
+    <div class="last-img">
+        <img src="assets/images/package.png" alt="last-img" style="height: 200px; width: 275px; font-weight: 250px;" />
+    </div>
+</div>
+
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>

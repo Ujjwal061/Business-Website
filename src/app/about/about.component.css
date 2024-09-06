@@ -1,0 +1,148 @@
+.header {
+    background-image: url("src/assets/images/aboutus.jpeg");
+    background-size: cover;
+    position: relative;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.header h1 {
+    padding-top: 460px;
+    font-size: 48px;
+    color: black;
+    font-weight: bold;
+    gap: 30px;
+}
+
+.header p {
+    color: black;
+    font-size: 24px;
+    padding-top: 30px;
+}
+
+.icon {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #333; /* Adjust color for better visibility */
+}
+
+.about-item-img{
+    height: 10vh;
+}
+
+.section {
+    padding: 50px 0;
+}
+
+.quote {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.quote blockquote {
+    font-family: Georgia, serif;
+    position: relative;
+    margin: 0.5em;
+    padding: 0.5em 2em 0.5em 3em;
+}
+
+.quote blockquote:before {
+    font-family: Georgia, serif;
+    position: absolute;
+    font-size: 6em;
+    line-height: 1;
+    top: 0;
+    left: 0;
+    color: black;
+    content: "\201C";
+}
+
+.quote blockquote:after {
+    font-family: Georgia, serif;
+    position: absolute;
+    float: right;
+    font-size: 6em;
+    line-height: 1;
+    right: 0;
+    bottom: -0.5em;
+    content: "\201D";
+    color: black;
+}
+
+.header2{
+    font-size: 10px;
+}
+
+.card {
+    height: 200px; /* Reduced card height */
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.card-img-left {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card-body {
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    height: 100%;
+}
+
+.card-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    background-color: lightgray;
+}
+
+.offer-image {
+    height: 420px; /* Adjusted to match the reduced height of two rows of cards */
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 400px;
+        padding: 50px 0;
+    }
+
+    .header h1 {
+        padding-top: 200px;
+        font-size: 32px;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    .package-done {
+        flex-direction: column;
+    }
+
+    .package-done li {
+        margin-bottom: 20px;
+    }
+
+    .rate .card-wrapper {
+        flex-direction: column;
+    }
+}

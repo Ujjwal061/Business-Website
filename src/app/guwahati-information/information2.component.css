@@ -1,0 +1,126 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+.header {
+    background-image: url('src/assets/images/gwhauti.jpeg');
+    background-size: cover;
+    background-position: center;
+    min-width: 100%;
+    height: 730px;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+.header h1 {
+    padding-top: 460px;
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+    gap: 30px;
+}
+.header p {
+    font-size: 24px;
+    padding-top: 30px;
+
+}
+.navbar {
+background-color: rgba(255, 255, 255, 0.5); /* Translucent background */
+display: flex;
+justify-content: flex-start;
+}
+
+.logo {
+width: 200px;
+height: 80px;
+}
+.tour-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+.tour-details li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 0;
+}
+.tour-details .day-title {
+    color: #FF5722; /* Deep orange */
+    font-weight: bold;
+}
+.contact-form {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-form .btn-primary {
+    background-color: #FF5722; /* Deep orange */
+    border-color: #FF5722; /* Deep orange */
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.rate {
+    margin-top: 50px;
+}
+.rate .card {
+    border-radius: 10px;
+    margin: 20px;
+}
+.package-done {
+    display: flex;
+    justify-content: space-between;
+}
+.package-done li {
+    flex: 1;
+    margin-right: 20px;
+}
+.rate .card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+@media (max-width: 1140px) {
+    .header {
+        height: 400px;
+        padding: 50px 0;
+    }
+
+    .header h1 {
+        padding-top: 200px;
+        font-size: 32px;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    .package-done {
+        flex-direction: column;
+    }
+
+    .package-done li {
+        margin-bottom: 20px;
+    }
+
+    .rate .card-wrapper {
+        flex-direction: column;
+    }
+}
+
+.container.shadow-effect {
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    border-radius: 10px;
+    background-color: #ffffff; /* Optional: to ensure a consistent background color */
+    padding: 20px;
+}
+
+/* Additional styles for smaller screens */
+@media (max-width: 768px) {
+    .container.shadow-effect {
+        box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    }
+}

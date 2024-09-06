@@ -1,0 +1,32 @@
+.contact-form {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-form .btn-primary {
+    background-color: #ff5722; /* Deep orange */
+    border-color: #ff5722; /* Deep orange */
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+  
+  /* .last-img{
+    height: 200px;
+    width: 200px;
+    
+  } */
+  .last-img {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.last-img img {
+    max-width: 100%;
+    height: auto;
+    width: 275px; /* Adjust as needed */
+}

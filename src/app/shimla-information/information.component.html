@@ -1,0 +1,145 @@
+<!-- For Shimla -->
+
+
+ <!-- Header Section -->
+ <header class="header">
+    <div class="container">
+        <h1>Travel Packages</h1>
+        <p>Shimla (02 Nights) Manali (03 Nights)</p>
+    </div>
+</header>
+
+<!-- Tabs Section -->
+<div class="container">
+    <ul class="nav nav-tabs justify-content-center" style="font-size: 20px; padding-top: 20px;">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#">
+                <img src="assets/images/tour2.png"/>
+                Information
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" [routerLink]="['/shimla']">
+                <img src="assets/images/tour1.png" />
+                Tour Plan
+            </a>
+        </li>
+    </ul>
+    <div class="tab-content container shadow-effect">
+        <div class="tab-pane fade show active" id="information" role="tabpanel">
+            <div class="row shadow-sm p-4" style="margin-top: 20px;">
+                <div class="col-md-8">
+                    <h2 class="section-title"><strong>Dream Shimla</strong></h2>
+                    <img src="assets/images/tour4.png" alt="Tour Image" height="20px" width="80px"/> (2.3k review)
+                    <p>Duration: 05 Nights/06 Days</p>
+                    <p>Shimla (02 Nights) Manali (03 Nights)</p>
+                    <div class="tour-details mt-4">
+                        <ul>
+                            <li><span class="day-title">Destination</span> Shimla (02 Nights) Manali (03 Nights)</li>
+                            <br>
+                            <br>
+                            <li><span class="day-title">Departure</span> Chandigarh</li>
+                            <br>
+                            <br>
+                            <li><span class="day-title">Days</span> 08 Days</li>
+                            <br>
+                            <br>
+                            <li><span class="day-title">Proposed Hotels</span> Hotel Sukh Sagar & A Star Regency</li>
+                        </ul>
+                        <br>
+                        <div class="package-done mt-4">
+                            <ul>
+                                <li><span class="day-title">Not Included</span>
+                                    <p>Personal expenses of any nature.</p>
+                                    <p>Train/Air fare</p>
+                                    <p>Guide</p>
+                                    <p>Entry Charges</p>
+                                    <p>Heater Charges</p>
+                                    <p>Unforeseen Expenses because of the weather conditions.</p>
+                                    <p>Excursion to Rohtang Pass (Guest Own on direct payment & Subject to Permit)</p>
+                                    <p>Any upgradation in Airline class or hotel room category.</p>
+                                    <p>Cost of Insurance.</p>
+                                    <p>Any extra expense such as route change, Date change, Accommodation facilities, etc incurred due to the unforeseen, unavoidable forced majeure circumstances during the tour.</p>
+                                    <p>Any services or activity charges other than those included in the tour itinerary/Holiday Package</p>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><span class="day-title">Included</span>
+                                    <p>Transportation by A/c Dzire/Etios for the entire tour</p> 
+                                    <p>All sightseeing and excursions as per the itinerary</p> 
+                                    <p>Mentioned or similar hotels as per the meal Plan</p>  
+                                    <p>Child of the age below 5 Years is complimentary without extra bed</p> 
+                                    <p>GST 5%</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <section class="rate mt-5">
+                            <h2><strong>RATE</strong></h2>
+                            <div class="card-wrapper d-flex justify-content-left flex-wrap">
+                                <div class="card shadow-sm m-2">
+                                    <div class="card-body text-center">
+                                        <img src="assets/images/home1.png" alt="CP PLAN" class="img-fluid" />
+                                        <h5 class="card-title mt-3"><strong>CP PLAN</strong></h5>
+                                        <p class="card-text">Cost Per Person: 44900</p>
+                                    </div>
+                                </div>
+                                <div class="card shadow-sm m-2">
+                                    <div class="card-body text-center">
+                                        <img src="assets/images/home1.png" alt="MAP PLAN" class="img-fluid" />
+                                        <h5 class="card-title mt-3"><strong>MAP PLAN</strong></h5>
+                                        <p class="card-text">Cost Per Person: 45900</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <!-- Booking section -->
+                <div class="col-md-4">
+                    <app-book-tour selectedPlan="shimla"></app-book-tour>
+                </div>
+                <!-- <div class="col-md-4 mt-4 mt-md-0">
+                    <form class="contact-form">
+                        <h3 class="section-title text-center"><strong>Book This Tour</strong></h3>
+                        <p class="text-center">Enjoy the cool breeze and snow showers in Shimla. Explore tourist spots with lush greens, visit architectural gems, and grab off-season discounts!</p>
+                        <div class="form-group">
+                            <label for="name"></label>
+                            <input type="text" class="form-control" id="name" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"></label>
+                            <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm-email"></label>
+                            <input type="email" class="form-control" id="confirm-email" placeholder="Confirm Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone"></label>
+                            <input type="text" class="form-control" id="phone" placeholder="Phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date"></label>
+                            <input type="date" class="form-control" id="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="number-of-tickets"></label>
+                            <input type="text" class="form-control" id="number-of-tickets" placeholder="Number Of Tickets" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message"></label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <div class="last-img mt-4 text-center">
+                        <img src="/assets/images/package.png" alt="Last Image" class="img-fluid" />
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="tab-pane fade" id="tour-plan" role="tabpanel">
+            <!-- Content for Tour Plan tab -->
+        </div>
+    </div>
+</div>

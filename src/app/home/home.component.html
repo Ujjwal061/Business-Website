@@ -1,0 +1,82 @@
+<app-destination-search></app-destination-search>
+
+<header class="header">
+    <div class="container">
+    </div>
+</header>
+<!-- Popular Packages Section -->
+<section class="py-5 container">
+    <div class="container1">
+        <h2 class="section-title">Our Services</h2>
+        <div class="row" style="padding: 10px; justify-content: center;">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="assets/images/aboutus.jpeg" class="card-img-top" alt="Package 1">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Travel</h5>
+                        <p class="card-text flex-grow-1">Shimla is known for its excellent skiing conditions with skiing enthusiasts visiting from all over the country.</p>
+                        <div class="d-flex justify-content-between">
+                            <div class="">
+                                <a [routerLink]="['/shimla-information']" class="btn btn-primary align-self-end">Shimla</a>
+                            </div>
+                            <div class="">
+                                <a [routerLink]="['/guwahati-information']" class="btn btn-primary align-self-end">Guwahati</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="assets/images/Business-services.jpg" class="card-img-top" alt="Package 2">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Business Services</h5>
+                        <p class="card-text flex-grow-1">Cybersecurity business services are essential for protecting organizations from a wide range of cyber threats.</p>
+                        <a [routerLink]="['/business']" class="btn btn-primary align-self-end">Visit Services</a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="py-5 bg-light">
+    <div class="middle-part">
+        <div class="container">
+            <h2 class="section-title2">Why Choose Us?</h2>
+            <div class="row">
+                <div class="col-md-4 mt-4">
+                    <div class="card-1">
+                        <div class="card-body text-center">
+                            <i class="icon-class"><img src="assets/images/home1.png"></i>
+                            <h5 class="card-title">Best Service</h5>
+                            <p class="card-text">Our service is reliable and convenient, and our service is quality.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <div class="card-1">
+                        <div class="card-body text-center">
+                            <i class="icon-class"><img src="assets/images/home2.png"></i>
+                            <h5 class="card-title">Price Guarantee</h5>
+                            <p class="card-text">Our service is reliable and convenient, and our service is quality.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <div class="card-1">
+                        <div class="card-body text-center">
+                            <i class="icon-class"><img src="assets/images/home3.png"></i>
+                            <h5 class="card-title">Handpicked Hotels</h5>
+                            <p class="card-text">Our service is reliable and convenient, and our service is quality.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<app-contact-us></app-contact-us>
